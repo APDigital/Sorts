@@ -10,6 +10,13 @@ namespace Sorts
     {
         static void Main(string[] args)
         {
+            int[] array = { 2, 6, 7, 8, 5, 4, 3, 1, 9 };
+
+            Select select = new Select();
+            select.SelectSort(array);
+            
+            Console.WriteLine(string.Join(",", array));
+            Console.ReadLine();
         }
     }
 }
