@@ -13,7 +13,7 @@ namespace Sorts
             //stores the starting position of both parts in temporary variables.
             int p = start, q = mid + 1;
             int[] Arr = { end - start + 1 };
-            int k = 0;
+            int k = (end - start + 1);
 
             for (int i = start; i <= end; i++)
             {
