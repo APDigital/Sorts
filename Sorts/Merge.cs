@@ -35,19 +35,18 @@ namespace Sorts
                      parts.*/
                 A[start++] = Arr[j];
             }
-            return Arr;
+            return A;
         }
-       public void merge_sort(int[] A, int length)
+       public void merge_sort(int[] A , int start, int end)
         {
-            if (A[0] < length)
+            if (start < end)
             {
-                int mid = (length) / 2;           // defines the current array in 2 parts .
-                merge_sort(A, length - mid);                 // sort the 1st part of array .
-                merge_sort(A, mid + length);              // sort the 2nd part of array.
-
+                int mid = (start + end) / 2;           // defines the current array in 2 parts .
+                merge_sort(A, start, mid);                 // sort the 1st part of array .
+                merge_sort(A, mid + 1, end);              // sort the 2nd part of array.
 
                 // merge the both parts by comparing elements of both the parts.
-                merge(A, A[0], mid, A[length - 1]);
+                merge(A, start, mid, end);
             }
         }
 

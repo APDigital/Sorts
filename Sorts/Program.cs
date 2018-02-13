@@ -19,7 +19,7 @@ namespace Sorts
             //insertion.InsertionSort(array);
 
             Merge merge = new Merge();
-            merge.merge_sort(array, 10);
+            merge.merge_sort(array, 1, 10);
 
             Console.WriteLine(string.Join(",", array));
             Console.ReadLine();
