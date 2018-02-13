@@ -10,14 +10,17 @@ namespace Sorts
     {
         static void Main(string[] args)
         {
-            int[] array = { 2, 6, 7, 8, 5, 4, 3, 1, 9 };
+            int[] array = { 2, 6, 7, 8, 5, 4, 3, 1, 9,10 };
 
             //Select select = new Select();
             //select.SelectSort(array);
 
-            Insertion insertion = new Insertion();
-            insertion.InsertionSort(array);
-            
+            //Insertion insertion = new Insertion();
+            //insertion.InsertionSort(array);
+
+            Merge merge = new Merge();
+            merge.merge_sort(array, 10);
+
             Console.WriteLine(string.Join(",", array));
             Console.ReadLine();
         }
